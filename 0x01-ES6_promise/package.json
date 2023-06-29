@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "node"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.43.0"
+  }
 }
-
