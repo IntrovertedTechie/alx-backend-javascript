@@ -1,0 +1,11 @@
+{
+  "name": "alx-backend-javascript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.43.0"
+  }
+}
