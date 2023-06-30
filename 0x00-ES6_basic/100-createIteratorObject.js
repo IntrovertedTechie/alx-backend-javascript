@@ -1,4 +1,3 @@
-
 export default function createIteratorObject(report) {
   const departments = Object.keys(report.allEmployees);
 
