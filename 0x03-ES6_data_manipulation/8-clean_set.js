@@ -8,7 +8,7 @@ const cleanSet = (set, startString) => {
     }
   });
 
-  // Remove the trailing '-' if any
+  
   if (result.endsWith('-')) {
     result = result.slice(0, -1);
   }
