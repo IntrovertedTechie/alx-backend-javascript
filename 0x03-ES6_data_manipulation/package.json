@@ -1,0 +1,16 @@
+{
+  "name": "alx-backend-javascript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.43.0"
+  },
+  "description": "Setup Install NodeJS 12.11.x (in your home directory):",
+  "main": "0-main.js",
+  "dependencies": {},
+  "author": "",
+  "license": "ISC"
+}
