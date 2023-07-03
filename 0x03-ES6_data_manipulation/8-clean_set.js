@@ -1,19 +1,22 @@
 const cleanSet = (set, startString) => {
-  let result = '';
+  const cleanedValues = [];
 
-  set.forEach(value => {
-    if (value.startsWith(startString)) {
-      const cleanedValue = value.slice(startString.length);
-      result += cleanedValue + '-';
-    }
-  });
-
-  
-  if (result.endsWith('-')) {
-    result = result.slice(0, -1);
+  if (
+    typeof set !== 'object' ||
+    !(set instanceof Set) ||
+    typeof startString !== 'string' ||
+    startString.length === 0
+  ) {
+    return '';
   }
 
-  return result;
+  for (const value of set) {
+    if (typeof value === 'string' && value.startsWith(startString)) {
+      cleanedValues.push(value.slice(startString.length));
+    }
+  }
+
+  return cleanedValues.join('-');
 };
 
 export default cleanSet;
