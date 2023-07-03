@@ -1,12 +1,19 @@
-function cleanSet(set, startString) {
-  let result = "";
-  for (let item of set) {
-    if (item.startsWith(startString)) {
-      const rest = item.substring(startString.length);
-      result += rest + "-";
+const cleanSet = (set, startString) => {
+  let result = '';
+
+  set.forEach(value => {
+    if (value.startsWith(startString)) {
+      const cleanedValue = value.slice(startString.length);
+      result += cleanedValue + '-';
     }
+  });
+
+  // Remove the trailing '-' if any
+  if (result.endsWith('-')) {
+    result = result.slice(0, -1);
   }
-  return result.slice(0, -1);
-}
+
+  return result;
+};
 
 export default cleanSet;
