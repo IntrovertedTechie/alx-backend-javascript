@@ -1,4 +1,3 @@
-
 // a function that cleans set with strings coincidences
 const cleanSet = (set, startString) => {
   const cleanedValues = [];
