@@ -1,4 +1,6 @@
-const cleanSet = (set, startString) => {
+
+// a function that cleans set with strings coincidences
+ cleanSet = (set, startString) => {
   const cleanedValues = [];
 
   if (
