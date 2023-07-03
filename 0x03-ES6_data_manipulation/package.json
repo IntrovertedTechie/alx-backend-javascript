@@ -12,5 +12,6 @@
   "main": "0-main.js",
   "dependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": []
 }
