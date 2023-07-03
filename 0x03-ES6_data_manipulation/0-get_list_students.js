@@ -6,4 +6,4 @@ function getListStudents() {
   ];
 }
 
-export default getListStudents;
+ export default getListStudents;
