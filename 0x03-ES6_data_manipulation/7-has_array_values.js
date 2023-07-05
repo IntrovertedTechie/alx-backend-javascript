@@ -4,7 +4,8 @@ function hasValuesFromArray(set, arr) {
       return false;
     }
   }
-  return true;
-}
+  
+   return true;
+};
 
 export default hasValuesFromArray;

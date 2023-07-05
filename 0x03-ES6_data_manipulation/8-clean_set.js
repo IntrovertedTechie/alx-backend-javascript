@@ -1,12 +1,23 @@
-function cleanSet(set, startString) {
-  let result = "";
-  for (let item of set) {
-    if (item.startsWith(startString)) {
-      const rest = item.substring(startString.length);
-      result += rest + "-";
+// a function that cleans set with strings coincidences
+const cleanSet = (set, startString) => {
+  const cleanedValues = [];
+
+  if (
+    typeof set !== 'object' ||
+    !(set instanceof Set) ||
+    typeof startString !== 'string' ||
+    startString.length === 0
+  ) {
+    return '';
+  }
+
+  for (const value of set) {
+    if (typeof value === 'string' && value.startsWith(startString)) {
+      cleanedValues.push(value.slice(startString.length));
     }
   }
-  return result.slice(0, -1);
-}
+
+  return cleanedValues.join('-');
+};
 
 export default cleanSet;
