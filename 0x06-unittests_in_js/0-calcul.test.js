@@ -19,6 +19,5 @@ describe('calculateNumber', () => {
   });
 
   it('rounding up floating point fractional numbers', () => {
-   
-}); 
+   }); 
 }); 
