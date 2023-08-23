@@ -1,4 +1,5 @@
-const { expect } = require('chai');
+
+ { expect } = require('chai');
 const calculateNumber = require('./2-calcul_chai');
 
 describe('calculateNumber', () => {
@@ -19,6 +20,7 @@ describe('calculateNumber', () => {
       expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
     });
 
+  describe('type == "DIVIDE"', () => {
     it('should handle division by 0', () => {
       expect(() => calculateNumber('DIVIDE', 1.4, 0)).to.throw('Error');
     });
