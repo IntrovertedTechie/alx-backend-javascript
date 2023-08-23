@@ -1,5 +1,5 @@
 const assert = require('chai');
-const calculateNumber = require('./1-calcul');
+const calculateNumber = require('./2-calcul');
 
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
