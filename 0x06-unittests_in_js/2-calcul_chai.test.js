@@ -14,13 +14,13 @@ describe('calculateNumber', () => {
     });
   });
 
-  describe('type == "DIVIDE"', () => {
-    it('should divide positive numbers', () => {
-      expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
-    });
-
-    it('should handle division by 0', () => {
-      expect(calculateNumber('DIVIDE', 1.4, 0)).to.throw('Error');
-    });
-});
-});	
+    describe('type == "DIVIDE"', () => { 
+     it('positive numbers', () => { 
+      expect (calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2); 
+     }); 
+  
+     it('positive number and 0', () => { 
+       expect(calculateNumber('DIVIDE', 1.4, 0)).to.equal('Error'); 
+     }); 
+ }); 
+ });
