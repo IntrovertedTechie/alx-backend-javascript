@@ -2,6 +2,7 @@ const assert= require('assert');
 
 const calculateNumber = require('./0-calcul');
 
+
 describe('calculateNumber', () => {
   it('handles whole numbers', () => {
     assert.strictEqual(calculateNumber(1, 2), 3);
